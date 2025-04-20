@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f0f9ff"/>
+  <rect width="1200" height="630" fill="url(#pattern)" opacity="0.05"/>
+  
+  <!-- Main content -->
+  <g transform="translate(150, 165)">
+    <!-- Logo -->
+    <g transform="translate(0, 0)">
+      <rect width="100" height="100" rx="20" fill="#2563eb"/>
+      <path d="M25 20h50v60H25V20zm5 5v50h40V25H30zm5 10h30v10H35V35zm0 15h30v10H35V50zm0 15h30v10H35V65z" fill="#ffffff"/>
+    </g>
+    
+    <!-- Text -->
+    <g transform="translate(120, 30)">
+      <text font-family="'Segoe UI', sans-serif" font-size="60" font-weight="bold" fill="#1e293b">
+        ARCHIF
+      </text>
+      <text font-family="'Segoe UI', sans-serif" font-size="24" fill="#475569" x="5" y="40">
+        Solution d'Archivage Électronique Open Source
+      </text>
+    </g>
+    
+    <!-- Tagline -->
+    <g transform="translate(0, 180)">
+      <rect width="900" height="80" rx="10" fill="#2563eb" opacity="0.1"/>
+      <text font-family="'Segoe UI', sans-serif" font-size="28" fill="#2563eb" x="30" y="50">
+        Simplifiez la gestion de vos archives numériques
+      </text>
+    </g>
+    
+    <!-- Flag -->
+    <g transform="translate(0, 280)">
+      <rect width="20" height="60" fill="#007a5e"/>
+      <rect width="20" height="60" x="20" fill="#ce1126"/>
+      <rect width="20" height="60" x="40" fill="#fcd116"/>
+      <text font-family="'Segoe UI', sans-serif" font-size="24" fill="#475569" x="80" y="40">
+        Développé au Cameroun
+      </text>
+    </g>
+  </g>
+  
+  <!-- Pattern definition -->
+  <defs>
+    <pattern id="pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5z" fill="#2563eb"/>
+    </pattern>
+  </defs>
+</svg> 

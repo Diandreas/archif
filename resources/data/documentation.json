@@ -1,0 +1,95 @@
+[
+    {
+        "id": "introduction",
+        "title": "Introduction",
+        "content": "Bienvenue dans la documentation officielle d'ARCHIF, la première solution d'archivage électronique open source conçue pour répondre aux besoins spécifiques des organisations africaines.",
+        "note": "Cette documentation est régulièrement mise à jour pour refléter les dernières fonctionnalités disponibles dans ARCHIF.",
+        "order": 1
+    },
+    {
+        "id": "installation",
+        "title": "Installation",
+        "content": "ARCHIF peut être installé de plusieurs façons selon vos besoins spécifiques. Vous pouvez utiliser notre script d'installation automatisé ou installer manuellement les composants.",
+        "subsections": [
+            {
+                "id": "prerequisites",
+                "title": "Prérequis",
+                "content": [
+                    "Serveur PHP 8.0 ou supérieur",
+                    "Base de données MySQL 5.7 ou MariaDB 10.2+",
+                    "Serveur Web (Apache, Nginx)",
+                    "Extensions PHP : mbstring, xml, curl, gd, zip"
+                ]
+            },
+            {
+                "id": "quick-install",
+                "title": "Installation rapide",
+                "content": "Clonez le dépôt GitHub et exécutez le script d'installation :\n\n```\ngit clone https://github.com/omgbwa-yasse/shelves.git\ncd shelves\nphp install.php\n```"
+            }
+        ],
+        "order": 2
+    },
+    {
+        "id": "configuration",
+        "title": "Configuration",
+        "content": "Après l'installation, vous devrez configurer ARCHIF selon les besoins de votre organisation. Les paramètres principaux sont définis dans le fichier `config.php`.",
+        "subsections": [
+            {
+                "id": "database",
+                "title": "Base de données",
+                "content": "Configurez les paramètres de connexion à votre base de données :\n\n```\n'database' => [\n    'host' => 'localhost',\n    'name' => 'archif_db',\n    'user' => 'root',\n    'password' => 'votre_mot_de_passe',\n    'charset' => 'utf8mb4',\n],\n```"
+            }
+        ],
+        "order": 3
+    },
+    {
+        "id": "utilisation",
+        "title": "Guide d'utilisation",
+        "content": "Cette section vous guide à travers les fonctionnalités principales d'ARCHIF et comment les utiliser efficacement.",
+        "subsections": [
+            {
+                "id": "dashboard",
+                "title": "Tableau de bord",
+                "content": "Le tableau de bord vous donne une vue d'ensemble de votre système d'archivage, avec des statistiques clés et des accès rapides aux fonctionnalités essentielles."
+            },
+            {
+                "id": "document-management",
+                "title": "Gestion des documents",
+                "content": "ARCHIF vous permet de gérer l'ensemble du cycle de vie de vos documents, de la réception à l'archivage définitif.",
+                "tip": "Utilisez les modèles prédéfinis pour accélérer la classification de vos documents."
+            }
+        ],
+        "order": 4
+    },
+    {
+        "id": "api",
+        "title": "API",
+        "content": "ARCHIF fournit une API RESTful complète permettant d'intégrer vos applications existantes avec le système d'archivage.",
+        "subsections": [
+            {
+                "id": "authentication",
+                "title": "Authentification",
+                "content": "Toutes les requêtes API nécessitent une authentification via un token JWT :\n\n```\ncurl -X GET \\\n  https://votre-serveur.com/api/documents \\\n  -H 'Authorization: Bearer votre_token_jwt'\n```"
+            }
+        ],
+        "order": 5
+    },
+    {
+        "id": "migration",
+        "title": "Migration des données",
+        "content": "Si vous migrez depuis un autre système d'archivage, ARCHIF fournit des outils pour faciliter ce processus.",
+        "order": 6
+    },
+    {
+        "id": "securite",
+        "title": "Sécurité",
+        "content": "La sécurité est une priorité dans ARCHIF. Le système implémente plusieurs niveaux de protection pour garantir l'intégrité et la confidentialité de vos archives.",
+        "order": 7
+    },
+    {
+        "id": "mise-a-jour",
+        "title": "Mises à jour",
+        "content": "Pour mettre à jour ARCHIF vers la dernière version, utilisez la commande suivante :\n\n```\nphp artisan archif:update\n```\n\nConsultez toujours les notes de version avant de procéder à une mise à jour importante.",
+        "order": 8
+    }
+]

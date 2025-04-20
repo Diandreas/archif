@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Convert SVG to PNG</title>
+</head>
+
+<body>
+    <h1>Convert SVG to PNG</h1>
+    <p>Right-click on the image below and save it as PNG file</p>
+
+    <img src="favicon.svg" width="32" height="32" alt="ARCHIF Favicon" id="svgImage">
+    <canvas id="canvas" width="32" height="32" style="display:none;"></canvas>
+
+    <p>Or click the button below:</p>
+    <button onclick="downloadPNG()">Download as PNG</button>
+
+    <script>
+        function downloadPNG() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = document.getElementById('svgImage');
+
+            ctx.drawImage(img, 0, 0, 32, 32);
+
+            const a = document.createElement('a');
+            a.href = canvas.toDataURL('image/png');
+            a.download = 'favicon.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+
+</html>

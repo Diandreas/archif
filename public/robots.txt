@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://archif.cm/sitemap.xml
+
+# Interdire certains répertoires techniques
+Disallow: /assets/img/favicon.html 

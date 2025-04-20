@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Débuter avec ARCHIF",
+        "level": "Débutant",
+        "duration": "15 min",
+        "description": "Un guide pour les nouveaux utilisateurs d'ARCHIF",
+        "icon": "bi-play-circle",
+        "available": false,
+        "coming_soon": true
+    },
+    {
+        "title": "Configuration du plan de classement",
+        "level": "Intermédiaire",
+        "duration": "30 min",
+        "description": "Apprenez à structurer efficacement vos archives",
+        "icon": "bi-folder2-open",
+        "available": false,
+        "coming_soon": true
+    },
+    {
+        "title": "Gestion avancée du courrier",
+        "level": "Avancé",
+        "duration": "45 min",
+        "description": "Optimisez votre flux de travail de correspondance",
+        "icon": "bi-envelope",
+        "available": false,
+        "coming_soon": true
+    },
+    {
+        "title": "Administration système",
+        "level": "Expert",
+        "duration": "60 min",
+        "description": "Guide complet pour les administrateurs système",
+        "icon": "bi-gear",
+        "available": false,
+        "coming_soon": true
+    },
+    {
+        "title": "Sécurité et contrôle d'accès",
+        "level": "Avancé",
+        "duration": "40 min",
+        "description": "Configuration de la sécurité et des permissions utilisateurs",
+        "icon": "bi-shield-lock",
+        "available": false,
+        "coming_soon": true
+    },
+    {
+        "title": "Sauvegarde et restauration",
+        "level": "Intermédiaire",
+        "duration": "20 min",
+        "description": "Protégez vos données avec des sauvegardes régulières",
+        "icon": "bi-cloud-arrow-up",
+        "available": false,
+        "coming_soon": true
+    }
+]

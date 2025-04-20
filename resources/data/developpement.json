@@ -1,0 +1,68 @@
+[
+    {
+        "id": "join-community",
+        "title": "Rejoignez la communauté ARCHIF",
+        "content": "ARCHIF est un projet open source développé au Cameroun, destiné à simplifier la gestion des archives électroniques. Nous accueillons les contributions de tous niveaux d'expertise, que ce soit pour le développement, la documentation, les tests ou la traduction.",
+        "github_url": "https://github.com/omgbwa-yasse/shelves",
+        "license": "GNU GPL v3"
+    },
+    {
+        "id": "how-to-contribute",
+        "title": "Comment contribuer",
+        "content": "Nous accueillons favorablement les contributions de tous les niveaux d'expertise.",
+        "steps": [
+            {
+                "step": 1,
+                "title": "Forker le dépôt",
+                "description": "Commencez par forker le dépôt sur GitHub pour créer votre propre copie du projet."
+            },
+            {
+                "step": 2,
+                "title": "Configurer votre environnement",
+                "description": "Suivez les instructions d'installation dans le README pour configurer votre environnement de développement."
+            },
+            {
+                "step": 3,
+                "title": "Choisir une tâche",
+                "description": "Parcourez les problèmes (issues) ouverts pour trouver une tâche qui vous intéresse, ou proposez vos propres améliorations."
+            },
+            {
+                "step": 4,
+                "title": "Soumettre une Pull Request",
+                "description": "Une fois vos modifications terminées, soumettez une pull request pour que votre contribution soit examinée et intégrée."
+            }
+        ]
+    },
+    {
+        "id": "dev-environment",
+        "title": "Environnement de développement",
+        "content": "ARCHIF est développé avec Laravel, un framework PHP moderne et puissant.",
+        "requirements": [
+            "PHP 8.0 ou supérieur",
+            "Composer",
+            "MySQL ou PostgreSQL",
+            "Node.js et NPM (pour les assets front-end)"
+        ],
+        "note": "Pour des instructions d'installation détaillées, veuillez consulter le fichier README.md sur GitHub."
+    },
+    {
+        "id": "roadmap",
+        "title": "Feuille de route",
+        "content": "Notre feuille de route de développement est en cours d'élaboration et sera bientôt disponible sur notre GitHub.",
+        "coming_soon": true,
+        "note": "Nous travaillons actuellement à établir les priorités pour les futures versions d'ARCHIF. Restez à l'écoute!"
+    },
+    {
+        "id": "code-style",
+        "title": "Guide de style de code",
+        "content": "Pour maintenir la cohérence du code, nous suivons les conventions de codage standard Laravel.",
+        "coming_soon": true,
+        "note": "Un guide de style détaillé sera disponible prochainement."
+    },
+    {
+        "id": "contact",
+        "title": "Contact",
+        "content": "Des questions sur le développement d'ARCHIF?",
+        "email": "omgbwayasse@gmail.com"
+    }
+]

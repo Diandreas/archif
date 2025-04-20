@@ -1,0 +1,21 @@
+{
+    "name": "ARCHIF - Solution d'Archivage Électronique",
+    "short_name": "ARCHIF",
+    "description": "Première solution d'archivage électronique open source africaine",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2563eb",
+    "icons": [
+        {
+            "src": "assets/img/favicon.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "32x32",
+            "type": "image/x-icon"
+        }
+    ]
+}

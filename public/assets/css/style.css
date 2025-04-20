@@ -1,0 +1,212 @@
+/* Variables CSS pour cohérence et facilité de maintenance */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary: #475569;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --success: #10b981;
+    --success-light: rgba(16, 185, 129, 0.1);
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --border-radius: 0.75rem;
+    --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Styles de base */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Classes d'accessibilité améliorée */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    transition: var(--transition);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Amélioration de l'accessibilité des liens */
+.content-link {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.content-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Sections de la page */
+.benefits-section {
+    background-color: var(--light);
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stats-item {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+}
+
+/* Correction du contraste pour meilleure accessibilité */
+.text-muted {
+    color: #64748b !important;
+}
+
+/* Mise en évidence des sections importantes */
+.seo-highlight {
+    background-color: rgba(37, 99, 235, 0.05);
+    border-radius: 8px;
+    padding: 2rem;
+    border-left: 4px solid var(--primary);
+}
+
+/* Optimisation mobile */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .stats-number {
+        font-size: 2rem;
+    }
+}
+
+/* Documentation et tutoriels */
+.doc-sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+.doc-content h2 {
+    color: var(--primary-dark);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.doc-content h3 {
+    color: var(--dark);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.doc-content pre {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.doc-content code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    background-color: #f1f5f9;
+    border-radius: 0.25rem;
+}
+
+.doc-alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: rgba(37, 99, 235, 0.05);
+    border-left: 4px solid var(--primary);
+}
+
+.doc-alert-warning {
+    background-color: rgba(245, 158, 11, 0.05);
+    border-left: 4px solid var(--warning);
+}
+
+.doc-alert-danger {
+    background-color: rgba(239, 68, 68, 0.05);
+    border-left: 4px solid var(--danger);
+}
+
+.doc-alert-success {
+    background-color: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid var(--success);
+}
