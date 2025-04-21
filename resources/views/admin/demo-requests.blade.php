@@ -165,7 +165,7 @@
                             <td>{{ $request->device ?? 'Inconnu' }}</td>
                             <td>
                                 @if($request->sent_at)
-                                <span class="badge bg-success">Envoyé le {{ $request->sent_at->format('d/m/Y') }}</span>
+                                <span class="badge bg-success">Envoyé le {{ $request->sent_at}}</span>
                                 @else
                                 <span class="badge bg-warning text-dark">En attente</span>
                                 @endif
@@ -183,13 +183,13 @@
                                     <button type="button" class="btn btn-sm btn-info me-1" data-bs-toggle="modal" data-bs-target="#detailsModal{{ $request->id }}" title="Voir les détails">
                                         <i class="bi bi-eye"></i>
                                     </button>
-                                    <form action="{{ route('demo-admin.destroy', $request->id) }}" method="POST" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette demande?');">
+                                    {{-- <form action="{{ route('demo-admin.destroy', $request->id) }}" method="POST" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cette demande?');">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-sm btn-danger" title="Supprimer">
                                             <i class="bi bi-trash"></i>
                                         </button>
-                                    </form>
+                                    </form> --}}
                                 </div>
                             </td>
                         </tr>

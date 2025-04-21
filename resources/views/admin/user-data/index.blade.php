@@ -208,13 +208,13 @@
             <div class="card shadow-sm">
                 <div class="card-header bg-light d-flex justify-content-between align-items-center">
                     <h4 class="mb-0">Liste des visiteurs ({{ $stats['total'] }})</h4>
-                    <form action="{{ route('user-data-admin.destroy-all') }}" method="POST" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer TOUTES les données? Cette action est irréversible.');">
+                    {{-- <form action="{{ route('user-data-admin.destroy-all') }}" method="POST" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer TOUTES les données? Cette action est irréversible.');">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger btn-sm">
                             <i class="bi bi-trash me-1"></i> Tout supprimer
                         </button>
-                    </form>
+                    </form> --}}
                 </div>
                 <div class="card-body p-0">
                     @if($userData->count() > 0)
@@ -251,13 +251,13 @@
                                                     <a href="{{ route('user-data-admin.show', $data->id) }}" class="btn btn-sm btn-primary me-1">
                                                         <i class="bi bi-eye"></i>
                                                     </a>
-                                                    <form action="{{ route('user-data-admin.destroy', $data->id) }}" method="POST">
+                                                    {{-- <form action="{{ route('user-data-admin.destroy', $data->id) }}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet enregistrement?')">
                                                             <i class="bi bi-trash"></i>
                                                         </button>
-                                                    </form>
+                                                    </form> --}}
                                                 </div>
                                             </td>
                                         </tr>
