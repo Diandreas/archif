@@ -34,7 +34,7 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="@yield('title', 'ARCHIF | La solution africaine de gestion documentaire')">
     <meta property="og:description" content="@yield('description', 'Solution 100% gratuite pour gérer vos archives numériques. Développée au Cameroun pour répondre aux besoins spécifiques africains.')">
-    <meta property="og:image" content="{{ asset('http://127.0.0.1:8000/assets/img/og-image.png') }}">
+    <meta property="og:image" content="https://archivefacile.com/assets/img/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
@@ -45,7 +45,7 @@
     <meta name="twitter:url" content="{{ url()->current() }}">
     <meta name="twitter:title" content="@yield('title', 'ARCHIF | Solution d\'Archivage Électronique African')">
     <meta name="twitter:description" content="@yield('description', 'Gérez facilement vos documents numériques avec notre solution 100% gratuite et open source, conçue au Cameroun.')">
-    <meta name="twitter:image" content="{{ asset('http://127.0.0.1:8000/assets/img/og-image.png') }}">
+    <meta name="twitter:image" content="https://archivefacile.com/assets/img/og-image.png">
 
     <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
