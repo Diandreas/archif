@@ -126,33 +126,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Mettre à jour le compteur de visites
         localStorage.setItem('archif_visit_count', userData.visit_count.toString());
 
-        // Fonction pour tenter d'obtenir la géolocalisation
-        function attemptGeolocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    // Succès
-                    function (position) {
-                        userData.latitude = position.coords.latitude;
-                        userData.longitude = position.coords.longitude;
-                        sendUserData(userData);
-                    },
-                    // Erreur
-                    function (error) {
-                        console.log('Erreur de géolocalisation:', error.message);
-                        sendUserData(userData);
-                    },
-                    // Options
-                    {
-                        timeout: 5000,
-                        maximumAge: 24 * 60 * 60 * 1000 // 24 heures
-                    }
-                );
-            } else {
-                console.log('Géolocalisation non supportée par ce navigateur');
-                sendUserData(userData);
-            }
-        }
-
         // Fonction pour envoyer les données au serveur
         function sendUserData(data) {
             console.log('Envoi des données...', data);
@@ -188,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         }
 
-        // Démarrer le processus de collecte avec géolocalisation
-        attemptGeolocation();
+        // Envoyer directement les données sans demander la géolocalisation
+        sendUserData(userData);
 
         // Mettre à jour les données de visite
         updateVisitData();
