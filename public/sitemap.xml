@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://archif.cm/</loc>
-    <lastmod>2023-07-01</lastmod>
+    <loc>https://archivefacile.com//</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://archif.cm/ressources/documentation.html</loc>
-    <lastmod>2023-07-01</lastmod>
+    <loc>https://archivefacile.com//documentation</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://archif.cm/ressources/faq.html</loc>
-    <lastmod>2023-07-01</lastmod>
+    <loc>https://archivefacile.com//faq</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archif.cm/ressources/tutoriels.html</loc>
-    <lastmod>2023-07-01</lastmod>
+    <loc>https://archivefacile.com//tutoriels</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://archif.cm/ressources/developpement.html</loc>
-    <lastmod>2023-07-01</lastmod>
+    <loc>https://archivefacile.com//developpement</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
