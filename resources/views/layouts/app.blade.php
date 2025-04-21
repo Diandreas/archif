@@ -103,7 +103,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            {{ asset('http://127.0.0.1:8000/assets/img/og-image.png') }}
+            {{-- {{ asset('http://127.0.0.1:8000/assets/img/og-image.png') }} --}}
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">

@@ -2,6 +2,23 @@
  * Script pour gérer la modale de demande de démo
  */
 document.addEventListener('DOMContentLoaded', function () {
+    // Vérifie si la modale a déjà été affichée (via localStorage)
+    const hasSeenModal = localStorage.getItem('demoModalSeen');
+
+    if (!hasSeenModal) {
+        // Attend 5 secondes avant d'afficher la modale
+        setTimeout(() => {
+            const demoModalElement = document.getElementById('demoModal');
+            if (demoModalElement) {
+                const demoModal = new bootstrap.Modal(demoModalElement);
+                demoModal.show();
+
+                // Marque la modale comme vue pour ne pas la réafficher
+                localStorage.setItem('demoModalSeen', 'true');
+            }
+        }, 5000);
+    }
+
     // Gestion du formulaire
     const demoForm = document.getElementById('demoRequestForm');
 
