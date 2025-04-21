@@ -8,6 +8,8 @@ use App\Http\Controllers\DeveloppementController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DemoRequestController;
 use App\Http\Controllers\DemoAdminController;
+use App\Http\Controllers\UserDataController;
+use App\Http\Controllers\UserDataAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +44,19 @@ Route::prefix('admin')->group(function () {
     Route::get('/demo-requests/export', [DemoAdminController::class, 'export'])->name('demo-admin.export');
     Route::post('/demo-requests/{id}/mark-sent', [DemoAdminController::class, 'markAsSent'])->name('demo-admin.mark-sent');
     Route::delete('/demo-requests/{id}', [DemoAdminController::class, 'destroy'])->name('demo-admin.destroy');
+    
+    // Gestion des données utilisateur collectées
+    Route::get('/user-data', [UserDataAdminController::class, 'index'])->name('user-data-admin.index');
+    Route::get('/user-data/export', [UserDataAdminController::class, 'export'])->name('user-data-admin.export');
+    Route::get('/user-data/{id}', [UserDataAdminController::class, 'show'])->name('user-data-admin.show');
+    Route::delete('/user-data/{id}', [UserDataAdminController::class, 'destroy'])->name('user-data-admin.destroy');
+    Route::delete('/user-data', [UserDataAdminController::class, 'destroyAll'])->name('user-data-admin.destroy-all');
+});
+
+// Route pour la collecte de données utilisateur
+Route::post('/collect-user-data', [UserDataController::class, 'collectUserData']);
+Route::get('/api/test-collect', function() {
+    return response()->json(['success' => true, 'message' => 'Endpoint de test fonctionne correctement']);
 });
 
 Route::get('/welcome', function () {

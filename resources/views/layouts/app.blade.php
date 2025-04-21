@@ -52,6 +52,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+    <!-- Script de collecte de données utilisateur -->
+    <script src="{{ asset('assets/js/user-data-collector.js') }}"></script>
+
     <style>
         /* Amélioration des couleurs du footer */
         .footer {
@@ -118,10 +121,10 @@
                         <a class="nav-link {{ Route::is('faq') ? 'active' : '' }}" href="{{ route('faq') }}">FAQ</a>
                     </li>
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn btn-outline-primary px-4 me-2" href="https://archivefacile.com/demo">Démo</a>
+                        <a class="btn btn-outline-primary px-4 me-2" href="#" data-bs-toggle="modal" data-bs-target="#demoModal">Démo</a>
                     </li>
                     <li class="nav-item mt-2 mt-lg-0">
-                        <a class="btn btn-primary px-4" href="https://github.com/omgbwa-yasse/shelves">Télécharger</a>
+                        <a class="btn btn-primary px-4" href="https://github.com/omgbwa-yasse/shelves" target="_blank">Télécharger</a>
                     </li>
                 </ul>
             </div>

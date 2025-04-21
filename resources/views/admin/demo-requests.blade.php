@@ -126,9 +126,14 @@
     <div class="card shadow-sm">
         <div class="card-header bg-light d-flex justify-content-between align-items-center">
             <h4 class="mb-0">Liste des demandes ({{ $stats['total'] }})</h4>
-            <a href="{{ route('demo-admin.export') }}" class="btn btn-primary btn-sm">
-                <i class="bi bi-download me-1"></i> Exporter CSV
-            </a>
+            <div>
+                <a href="{{ route('user-data-admin.index') }}" class="btn btn-info btn-sm me-2">
+                    <i class="bi bi-person-badge me-1"></i> Données utilisateur
+                </a>
+                <a href="{{ route('demo-admin.export') }}" class="btn btn-primary btn-sm">
+                    <i class="bi bi-download me-1"></i> Exporter CSV
+                </a>
+            </div>
         </div>
         <div class="card-body p-0">
             <div class="table-responsive">

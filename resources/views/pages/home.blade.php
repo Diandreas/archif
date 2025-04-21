@@ -36,7 +36,7 @@
                         aria-label="Télécharger ARCHIF gratuitement">
                         <i class="bi bi-download me-2" aria-hidden="true"></i>Télécharger gratuitement
                     </a>
-                    <a href="https://archivefacile.com/demo" class="btn btn-outline-primary btn-lg px-4 py-2"
+                    <a href="#" class="btn btn-outline-primary btn-lg px-4 py-2" data-bs-toggle="modal" data-bs-target="#demoModal"
                         aria-label="Voir la démonstration d'ARCHIF">
                         <i class="bi bi-play-circle me-2" aria-hidden="true"></i>Voir la démo
                     </a>
@@ -266,7 +266,7 @@
                         class="btn btn-light btn-lg px-4 py-2 fw-bold text-primary">
                         <i class="bi bi-download me-2" aria-hidden="true"></i>Télécharger ARCHIF
                     </a>
-                    <a href="https://archivefacile.com/demo" class="btn btn-outline-light btn-lg px-4 py-2">
+                    <a href="#" class="btn btn-outline-light btn-lg px-4 py-2" data-bs-toggle="modal" data-bs-target="#demoModal">
                         <i class="bi bi-play-circle me-2" aria-hidden="true"></i>Essayer la démo
                     </a>
                 </div>

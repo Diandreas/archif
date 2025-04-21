@@ -24,7 +24,11 @@ class DemoAdminController extends Controller
             'today' => DemoRequest::whereDate('created_at', today())->count(),
             'week' => DemoRequest::where('created_at', '>=', now()->subDays(7))->count(),
             'month' => DemoRequest::where('created_at', '>=', now()->subDays(30))->count(),
-            'countries' => DemoRequest::whereNotNull('country')->distinct('country')->count('country'),
+            'countries' => DemoRequest::whereNotNull('country')
+                ->selectRaw('country, count(*) as count')
+                ->groupBy('country')
+                ->get()
+                ->count(),
             'browsers' => DemoRequest::whereNotNull('browser')
                 ->selectRaw('browser, count(*) as count')
                 ->groupBy('browser')
