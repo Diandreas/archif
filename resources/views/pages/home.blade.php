@@ -6,6 +6,133 @@
 
 @section('content')
 <!-- Hero Section -->
+
+
+
+
+<!-- Bandeau À la Une -->
+<section class="bandeau-une py-6 mb-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+            <!-- Image et titre À la Une -->
+            <div class="col-lg-4 text-center text-lg-start">
+                <img src="{{ asset('image/medium-shot-woman-working-as-lawyer_23-2151202455.jpg') }}" alt="À la Une ARCHIF" class="img-fluid rounded shadow-sm mb-3" width="350" height="200" loading="lazy">
+                <h2 class="fw-bold mb-2">À la Une : ARCHIF simplifie l’archivage électronique</h2>
+                <p class="text-muted mb-0">
+                    Découvrez comment ARCHIF révolutionne la gestion documentaire en Afrique avec une solution open source, sécurisée et accessible à tous.
+                </p>
+            </div>
+            <!-- Boxes en grille 2x2 -->
+            <div class="col-lg-8">
+                <div class="row g-4">
+                    <div class="col-6 col-md-6">
+                        <div class="card h-100 text-center border-0 shadow-sm">
+                            <img src="{{ asset('image/box1.jpg') }}" class="card-img-top mx-auto d-block mt-3" alt="Box 1" style="width:80px; height:80px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-1">Titre 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="card h-100 text-center border-0 shadow-sm">
+                            <img src="{{ asset('image/box2.jpg') }}" class="card-img-top mx-auto d-block mt-3" alt="Box 2" style="width:80px; height:80px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-1">Titre 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="card h-100 text-center border-0 shadow-sm">
+                            <img src="{{ asset('image/box4.jpg') }}" class="card-img-top mx-auto d-block mt-3" alt="Box 4" style="width:80px; height:80px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-1">Titre 4</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="card h-100 text-center border-0 shadow-sm">
+                            <img src="{{ asset('image/box6.jpg') }}" class="card-img-top mx-auto d-block mt-3" alt="Box 6" style="width:80px; height:80px; object-fit:cover;">
+                            <div class="card-body p-2">
+                                <h5 class="card-title mb-1">Titre 6</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            @php
+                $boxes = [
+                    [
+                        'title' => 'Archivage Sécurisé',
+                        'text' => 'Conservez vos documents numériques en toute sécurité grâce à un système conforme aux normes.',
+                        'category' => 'Sécurité'
+                    ],
+                    [
+                        'title' => 'Recherche Rapide',
+                        'text' => 'Trouvez instantanément vos fichiers grâce à une recherche multicritères performante.',
+                        'category' => 'Productivité'
+                    ],
+                    [
+                        'title' => 'Gestion Collaborative',
+                        'text' => 'Travaillez en équipe sur vos archives et partagez l’information facilement.',
+                        'category' => 'Collaboration'
+                    ],
+                    [
+                        'title' => 'Interface Moderne',
+                        'text' => 'Profitez d’une interface intuitive et agréable, pensée pour tous les utilisateurs.',
+                        'category' => 'Design'
+                    ],
+                    [
+                        'title' => 'Open Source',
+                        'text' => 'Bénéficiez d’une solution libre, évolutive et adaptée à vos besoins spécifiques.',
+                        'category' => 'Liberté'
+                    ],
+                    [
+                        'title' => 'Support Local',
+                        'text' => 'Un accompagnement et une expertise adaptés au contexte africain.',
+                        'category' => 'Afrique'
+                    ],
+                ];
+            @endphp
+            @foreach($boxes as $box)
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body p-3">
+                            <h5 class="card-title mb-2">{{ $box['title'] }}</h5>
+                            <p class="card-text text-muted mb-2" style="font-size: 0.95rem;">
+                                {{ \Illuminate\Support\Str::limit($box['text'], 30) }}
+                            </p>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">{{ $box['category'] }}</span>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+@push('styles')
+<style>
+    .bandeau-une.py-6 {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+    }
+    @media (max-width: 991.98px) {
+        .bandeau-une .row.g-4 > [class^="col-"] {
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>
+@endpush
+
+
 <section class="hero-section">
     <div class="hero-pattern" aria-hidden="true"></div>
     <div class="container position-relative">
@@ -385,4 +512,4 @@
         transform: translateY(-5px);
     }
 </style>
-@endpush 
+@endpush
