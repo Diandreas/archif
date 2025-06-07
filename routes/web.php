@@ -11,6 +11,7 @@ use App\Http\Controllers\DemoRequestController;
 use App\Http\Controllers\DemoAdminController;
 use App\Http\Controllers\UserDataController;
 use App\Http\Controllers\UserDataAdminController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -71,5 +72,9 @@ Route::get('/api/test-collect', function() {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+// Routes pour le blog
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 require __DIR__.'/auth.php';
