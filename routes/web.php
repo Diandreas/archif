@@ -36,6 +36,9 @@ Route::middleware('auth')->group(function () {
         Route::get('/user-data/{id}', [UserDataAdminController::class, 'show'])->name('user-data-admin.show');
         Route::delete('/user-data/{id}', [UserDataAdminController::class, 'destroy'])->name('user-data-admin.destroy');
         Route::delete('/user-data', [UserDataAdminController::class, 'destroyAll'])->name('user-data-admin.destroy-all');
+
+        // Route pour la gestion du blog
+        Route::get('/blog', [BlogController::class, 'adminIndex'])->name('admin.blog.index');
     });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
+use App\Models\Author;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -35,5 +38,17 @@ class BlogController extends Controller
     {
         $article = Article::where('slug', $slug)->firstOrFail();
         return view('pages.article', compact('article'));
+    }
+
+    /**
+     * Affiche la page d'administration pour gérer le blog.
+     */
+    public function adminIndex()
+    {
+        $articles = Article::all();
+        $categories = Category::all();
+        $authors = Author::all();
+
+        return view('admin.blog', compact('articles', 'categories', 'authors'));
     }
 }
